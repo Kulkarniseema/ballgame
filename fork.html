@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+       
+        .container{
+            height: 100vh;
+            background-color: rgb(118, 165, 42);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+       
+        .game{
+            height: 1200px;
+            width: 2000px;
+            background-color: rgb(38, 0, 255);
+            border: 5px black solid;
+        }
+        .ball{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: rgb(255, 0, 106);
+        }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="game">
+
+    </div>
+  </div>
+  <script>
+    window.onload=function(){
+        let ball= document.createElement("div")
+        ball.classList.add("ball")
+        let gameBox=document.querySelector(".game")
+        gameBox.appendChild(ball)
+    };
+  </script>
+</body>
+</html>
